@@ -20,7 +20,7 @@ rvm:
   - 2.4.1
 gemfile: Gemfile
 env:
-  - MATHN=true RUBOCOP=false
+  - MATHN=true RUBOCOP=true
   - MATHN=false RUBOCOP=false
 branches:
   only:
@@ -28,13 +28,9 @@ branches:
     - stable
     - stable_3_2
     - next
+    - feature/next-travis-speedup-1
+    - feature/next-travis-speedup-2
+    - feature/next-travis-speedup-3
+    - feature/next-travis-speedup-4
 notifications:
   irc: {channels: "irc.freenode.org#sass"}
-matrix:
-  include:
-    - rvm: 2.2.7
-      env: MATHN=true RUBOCOP=true
-    - rvm: 2.1.10
-      env: MATHN=true RUBOCOP=true
-    - rvm: 2.0.0
-      env: MATHN=true RUBOCOP=true

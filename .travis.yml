@@ -28,6 +28,10 @@ branches:
     - stable
     - stable_3_2
     - next
+    - feature/next-travis-speedup-1
+    - feature/next-travis-speedup-2
+    - feature/next-travis-speedup-3
+    - feature/next-travis-speedup-4
 notifications:
   irc: {channels: "irc.freenode.org#sass"}
 matrix:
